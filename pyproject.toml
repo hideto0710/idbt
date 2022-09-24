@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "idbt"
+version = "0.1.0"
+description = ""
+authors = ["hideto0710 <h.inamura0710@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+jupyter-client = "^7.0.6"
+ipython = "^7.28.0"
+ipykernel = "^6.4.1"
+requests = "^2.26.0"
+pandas = "^1.3.3"
+bamboolib = "^1.26.0"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+notebook = "^6.4.4"
+jupyter-contrib-nbextensions = "^0.5.1"
+
+[tool.poetry.scripts]
+idbt = 'idbt:main'
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
